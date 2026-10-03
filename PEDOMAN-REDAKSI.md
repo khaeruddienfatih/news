@@ -2,7 +2,9 @@
 
 ## Prinsip
 - **Akurat dulu, cepat kemudian.** Tidak ada angka, kutipan, atau tanggal tanpa sumber.
-- **Rujukan utama:** Kementerian Agama RI, Kementerian Haji dan Umrah Arab Saudi, BPKH, operator resmi, dan pernyataan terbuka pejabat berwenang.
+- **Patokan utama:** [haji.go.id](https://haji.go.id) (Kementerian Haji dan Umrah RI). Rujukan pendukung: Kemenag RI (umrah/PPIU), Kementerian Haji dan Umrah Arab Saudi, BPKH, dan pernyataan terbuka pejabat berwenang. Daftar lengkap ada di `data-sumber/sumber-rujukan.md`.
+- **Jika bertentangan,** sumber resmi pemerintah mengalahkan media; selisih angka dicatat di naskah.
+- **Jika haji.go.id tidak terbaca,** tandai fakta sebagai `belum diverifikasi langsung`.
 - **Bedakan** fakta, pernyataan sumber, dan analisis. Beri label jika perlu.
 - **Biaya dan kuota** selalu menyebut tanggal data dan sumbernya, karena sering berubah.
 - **Tidak ada klaim keagamaan (fatwa)** atas nama sendiri; rujuk lembaga atau ulama yang disebut jelas.
