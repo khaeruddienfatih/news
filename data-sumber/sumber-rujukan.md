@@ -10,7 +10,7 @@ Diperbarui: 2026-10-03
 5. Media arus utama sebagai pembanding, bukan sumber tunggal: Antara, Kompas, Bisnis.com, Kontan, Tirto, RRI.
 
 ## Catatan akses
-- `haji.go.id` **tidak dapat diakses** dari lingkungan kerja ini (diblokir proxy jaringan, 2026-10-03). Fakta dari situs itu harus dikonfirmasi manual atau lewat media yang mengutipnya, dan ditandai `belum diverifikasi langsung ke haji.go.id`.
+- ~~`haji.go.id` diblokir~~ — sudah terbuka lewat terminal pada 2026-10-03; lihat bagian "Akses haji.go.id" di bawah.
 - `kemenhaj.go.id` tidak ditemukan (DNS gagal). Jangan dipakai sebagai rujukan.
 
 ## Fakta awal terverifikasi lewat media (haji 1447 H / 2026)
@@ -21,3 +21,25 @@ Diperbarui: 2026-10-03
 
 ## Antihoaks
 - Rujukan cek fakta: [RRI — hoaks pendaftaran petugas haji 2027](https://rri.co.id/banjarmasin/cek-fakta/2177811/hoaks-kementerian-haji-dan-umrah-buka-pendaftaran-petugas-haji-2027), [Tirto — hoaks undian haji umrah gratis](https://tirto.id/hoaks-undian-haji-umrah-gratis-dari-kementerian-agama-hqQZ).
+
+## Akses haji.go.id (diperbarui 2026-10-03)
+Domain **sudah dapat dibaca lewat terminal (`curl`)**. `WebFetch` hanya mendapat kerangka halaman karena situs adalah aplikasi React yang memuat isi lewat JavaScript; render Chromium macet, jadi jangan diandalkan. Gunakan endpoint API publik situs:
+
+| Endpoint | Isi |
+|---|---|
+| `https://haji.go.id/api/news` | Berita resmi (795 berita, 80 halaman; kategori: Siaran Pers, Nasional, Daerah, Internasional, Pengumuman, Klarifikasi Hoaks, Feature). Tiap item: `title`, `content`, `category`, `publishDate`, `slug`, `tags`. |
+| `https://haji.go.id/api/hajj/waiting-list` | Kuota, masa tunggu, porsi terakhir, jumlah pendaftar, lunas tunda per provinsi (34 wilayah). **Tanpa tanggal pembaruan**; tulis "data diakses pada <tanggal>". |
+| `https://haji.go.id/api/config` | Kontak resmi, media sosial resmi. |
+
+Tautan publik berita: `https://haji.go.id/berita/<slug>`.
+
+Kontak resmi (dari `/api/config`): kemenhaj.ri@haji.go.id, 021-3900021 / 021-3900020. Media sosial: @kemenhaj_ri (TikTok, X), @kemenhaj.ri (Instagram), facebook.com/kemenhaj.
+
+Salinan data tersimpan di `data-sumber/haji-go-id/` (snapshot 2026-10-03).
+
+### Berita terbaru resmi (per 2026-10-01)
+- 1/10: Kemenhaj–Kemendagri padankan data jemaah haji (integrasi Siskohat–Dukcapil).
+- 29/9: 189 aduan masuk, Kemenhaj perketat pengawasan travel umrah.
+- 29/9: Kemenhaj tegaskan kewajiban travel berizin dan standar harga umrah (melindungi 200 ribu jemaah per bulan).
+- 29/9: 50 persen travel umrah tak aktif, aturan dirombak dan perizinan didigitalisasi.
+- 28/9: Presiden: tata kelola keuangan haji diaudit.
