@@ -14,3 +14,8 @@ Pada #490 widget ulasan (Trustindex) sempat terpotong menjadi 1 ulasan akibat up
 ## Belum dikerjakan
 - Beranda #197 (Elementor, ±137 KB): "Masa Tunggu 8-10 Tahun" -> "sekitar 6–10 tahun"; "KEMENAG RI SK No.848/2020" -> "846/2020"; teks "estimasi keberangkatan dalam 5 hingga 9 tahun" perlu disesuaikan. Tidak saya kirim ulang lewat API karena risiko merusak tata letak; disarankan edit manual di Elementor. #113 belum diperiksa.
 - Post belum terbaca: #757, #763, #725 (draf), #586, #581, #495, #322, #276, #347, #342, #336, #331, #267; halaman #226, #742, #248; opsional #803, #804, mojibake & anchor #750.
+
+## Artikel baru 2026-10-06
+- #902 "Haji Plus vs Haji Furoda" (slug haji-plus-vs-haji-furoda), status publish. Klaster keyword 4 (perbandingan). Angka mengikuti brosur (setoran 4.000 USD, masa tunggu lapangan 6–10 th, Dana Manfaat ±120 USD/th). Tidak memuat angka biaya furoda (tidak ada sumber resmi).
+- Tautan keluar internal (12): apa-itu-haji-khusus-haji-plus-dana-manfaat, estimasi-keberangkatan-haji-plus, perbandingan-paket-haji-plus-silver-gold-platinum, rekening-resmi-pembayaran-haji-plus, daftar-penyelenggara-haji-khusus-resmi, cicilan-haji-plus-simulasi-angsuran-pembiayaan, manasik-haji-plus-masa-tunggu, voucher-umroh-masa-tunggu-haji-plus, paket-haji-plus, perbedaan-haji-khusus-dan-reguler, cara-daftar-haji-plus.
+- Belum: tautan masuk dari post lama ke #902 (usulan: #608, #750, #727, #495).
