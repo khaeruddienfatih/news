@@ -1,10 +1,13 @@
 DAFTAR SUMBER ARTIKEL UMROH & HAJI
-Diperbarui: 12 Oktober 2026
+Diperbarui: 12 Oktober 2026 (uji ulang setelah domain ditambah ke Allowed domains)
 
 Keterangan akses (dari lingkungan kerja Claude):
   [PENUH]    = isi artikel lengkap bisa dibaca
   [CUPLIKAN] = hanya judul + ringkasan lewat mesin pencari
   [BLOKIR]   = belum bisa dibuka (perlu ditambah ke Allowed domains)
+  [WWW]      = domain utama diizinkan, versi www. belum -> tambahkan www.<domain>
+  [TOLAK]    = diizinkan, tapi situsnya menolak akses otomatis (Cloudflare/406)
+  [SSL]      = sertifikat situsnya bermasalah
 
 ======================================================================
 1. INDONESIA - PEMERINTAH (SUMBER RESMI / PATOKAN UTAMA)
@@ -16,9 +19,9 @@ Keterangan akses (dari lingkungan kerja Claude):
            Tautan berita: https://haji.go.id/berita/<slug>
 [PENUH]    Kementerian Agama RI
            https://kemenag.go.id
-[BLOKIR]   BPKH (Badan Pengelola Keuangan Haji)  https://bpkh.go.id
-[BLOKIR]   Direktorat Jenderal Imigrasi          https://www.imigrasi.go.id
-[BLOKIR]   Kementerian Kesehatan                 https://kemkes.go.id
+[PENUH]    BPKH (Badan Pengelola Keuangan Haji)  https://bpkh.go.id
+[WWW]      Direktorat Jenderal Imigrasi          https://www.imigrasi.go.id
+[PENUH]    Kementerian Kesehatan                 https://kemkes.go.id
 
 ======================================================================
 2. INDONESIA - ASOSIASI PENYELENGGARA UMROH & HAJI KHUSUS
@@ -45,63 +48,63 @@ Keterangan akses (dari lingkungan kerja Claude):
 ======================================================================
 3. INDONESIA - MEDIA (PEMBANDING, BUKAN SUMBER TUNGGAL)
 ======================================================================
-[CUPLIKAN] Antara                 https://www.antaranews.com
-[CUPLIKAN] Republika / Ihram      https://www.republika.co.id
-[CUPLIKAN] Detik Hikmah           https://www.detik.com/hikmah/haji-dan-umrah
-[CUPLIKAN] Kompas                 https://www.kompas.com
-[CUPLIKAN] Kontan                 https://nasional.kontan.co.id
-[CUPLIKAN] Bisnis.com             https://www.bisnis.com
-[CUPLIKAN] Tirto                  https://tirto.id
-[CUPLIKAN] RRI / Voice of Indonesia  https://rri.co.id
-[CUPLIKAN] Okezone Muslim         https://muslim.okezone.com
-[CUPLIKAN] NU Online              https://nu.or.id
-[CUPLIKAN] Muhammadiyah           https://muhammadiyah.or.id
-[CUPLIKAN] MUI (rujukan fatwa)    https://mui.or.id
+[PENUH]    Antara                 https://www.antaranews.com
+[PENUH]    Republika / Ihram      https://www.republika.co.id
+[PENUH]    Detik Hikmah           https://www.detik.com/hikmah/haji-dan-umrah
+[PENUH]    Kompas                 https://www.kompas.com
+[PENUH]    Kontan                 https://nasional.kontan.co.id
+[TOLAK]    Bisnis.com             https://www.bisnis.com
+[TOLAK]    Tirto                  https://tirto.id
+[TOLAK]    RRI / Voice of Indonesia  https://rri.co.id
+[PENUH]    Okezone Muslim         https://muslim.okezone.com
+[PENUH]    NU Online              https://nu.or.id
+[PENUH]    Muhammadiyah           https://muhammadiyah.or.id
+[PENUH]    MUI (rujukan fatwa)    https://mui.or.id
 
 ======================================================================
 4. ARAB SAUDI - PEMERINTAH (SUMBER RESMI)
 ======================================================================
-[CUPLIKAN] Kementerian Haji dan Umrah Saudi   https://www.haj.gov.sa
-[CUPLIKAN] Nusuk (platform resmi umrah/haji)  https://www.nusuk.sa
-[CUPLIKAN] Saudi Press Agency (SPA)           https://www.spa.gov.sa
-[BLOKIR]   Kementerian Kesehatan Saudi        https://www.moh.gov.sa
-[BLOKIR]   Otoritas Dua Masjid Suci           https://alharamain.gov.sa
-[BLOKIR]   Kereta Cepat Haramain              https://www.hhr.sa
-[BLOKIR]   Royal Commission Makkah            https://www.rcmc.gov.sa
+[PENUH]    Kementerian Haji dan Umrah Saudi   https://www.haj.gov.sa
+[TOLAK]    Nusuk (platform resmi umrah/haji)  https://www.nusuk.sa
+[PENUH]    Saudi Press Agency (SPA)           https://www.spa.gov.sa
+[WWW]      Kementerian Kesehatan Saudi        https://www.moh.gov.sa
+[SSL]      Otoritas Dua Masjid Suci           https://alharamain.gov.sa
+[WWW]      Kereta Cepat Haramain              https://www.hhr.sa
+[WWW]      Royal Commission Makkah            https://www.rcmc.gov.sa
 
 ======================================================================
 5. ARAB SAUDI & TELUK - MEDIA
 ======================================================================
-[CUPLIKAN] Arab News        https://www.arabnews.com
-[CUPLIKAN] Saudi Gazette    https://saudigazette.com.sa
-[CUPLIKAN] Okaz (Arab)      https://www.okaz.com.sa
-[CUPLIKAN] Al Riyadh (Arab) https://www.alriyadh.com
-[CUPLIKAN] Sabq (Arab)      https://sabq.org
-[CUPLIKAN] Al Arabiya       https://english.alarabiya.net
-[CUPLIKAN] Gulf News (UEA)  https://gulfnews.com
-[CUPLIKAN] Khaleej Times    https://www.khaleejtimes.com
-[CUPLIKAN] The National     https://www.thenationalnews.com
+[PENUH]    Arab News        https://www.arabnews.com
+[PENUH]    Saudi Gazette    https://saudigazette.com.sa
+[WWW]      Okaz (Arab)      https://www.okaz.com.sa
+[SSL]      Al Riyadh (Arab) https://www.alriyadh.com
+[TOLAK]    Sabq (Arab)      https://sabq.org
+[TOLAK]    Al Arabiya       https://english.alarabiya.net
+[PENUH]    Gulf News (UEA)  https://gulfnews.com
+[WWW]      Khaleej Times    https://www.khaleejtimes.com
+[WWW]      The National     https://www.thenationalnews.com
 
 ======================================================================
 6. NEGARA LAIN (PEMBANDING REGIONAL)
 ======================================================================
-Malaysia   [CUPLIKAN] Tabung Haji              https://www.th.com.my
-           [CUPLIKAN] Bernama                  https://www.bernama.com
-           [CUPLIKAN] Berita Harian            https://www.bharian.com.my
-Pakistan   [CUPLIKAN] Ministry of Religious Affairs  https://mora.gov.pk
-           [CUPLIKAN] Dawn                     https://www.dawn.com
-India      [CUPLIKAN] Haj Committee of India   https://hajcommittee.gov.in
-Bangladesh [CUPLIKAN] Ittefaq                  https://en.ittefaq.com.bd
-Brunei     [CUPLIKAN] Pelita Brunei            https://www.pelitabrunei.gov.bn
-Nigeria    [CUPLIKAN] NAHCON                   https://nahcon.gov.ng
-Turki      [CUPLIKAN] Diyanet                  https://www.diyanet.gov.tr
+Malaysia   [WWW]      Tabung Haji              https://www.th.com.my
+           [PENUH]    Bernama                  https://www.bernama.com
+           [WWW]      Berita Harian            https://www.bharian.com.my
+Pakistan   [PENUH]    Ministry of Religious Affairs  https://mora.gov.pk
+           [TOLAK]    Dawn                     https://www.dawn.com
+India      [PENUH]    Haj Committee of India   https://hajcommittee.gov.in
+Bangladesh [TOLAK]    Ittefaq                  https://en.ittefaq.com.bd
+Brunei     [WWW]      Pelita Brunei            https://www.pelitabrunei.gov.bn
+Nigeria    [PENUH]    NAHCON                   https://nahcon.gov.ng
+Turki      [WWW]      Diyanet                  https://www.diyanet.gov.tr
 
 ======================================================================
-7. AGREGATOR (UNTUK OTOMATISASI, PERLU DIBUKA AKSESNYA)
+7. AGREGATOR (UNTUK OTOMATISASI)
 ======================================================================
-[BLOKIR]   Google News RSS (Indonesia):
+[PENUH]    Google News RSS (Indonesia):
            https://news.google.com/rss/search?q=umrah&hl=id&gl=ID&ceid=ID:id
-[BLOKIR]   Google News RSS (Saudi, Inggris):
+[PENUH]    Google News RSS (Saudi, Inggris):
            https://news.google.com/rss/search?q=umrah+saudi&hl=en-SA&gl=SA&ceid=SA:en
 
 ======================================================================
@@ -111,11 +114,12 @@ Blog agen travel / OTA (mis. Wego, visitworld.today, umrahservices.in).
 Angkanya sering berbeda antar-situs; telusuri ke haj.gov.sa / SPA / haji.go.id.
 
 ======================================================================
-DOMAIN YANG DISARANKAN DITAMBAH KE "ALLOWED DOMAINS"
+DOMAIN YANG MASIH PERLU DITAMBAH KE "ALLOWED DOMAINS" (versi www.)
 ======================================================================
-antaranews.com, republika.co.id, detik.com, kompas.com,
-haj.gov.sa, nusuk.sa, spa.gov.sa, arabnews.com, saudigazette.com.sa,
-th.com.my, bernama.com, news.google.com, bpkh.go.id
+www.imigrasi.go.id, www.th.com.my, www.bharian.com.my,
+www.khaleejtimes.com, www.thenationalnews.com, www.kompas.tv,
+www.okaz.com.sa, www.moh.gov.sa, www.diyanet.gov.tr,
+www.pelitabrunei.gov.bn, www.rcmc.gov.sa, www.hhr.sa, hhr.sa
 Panduan: https://code.claude.com/docs/en/cloud-environments#network-access
 
 ======================================================================
