@@ -1,6 +1,6 @@
 # Sumber Rujukan Redaksi
 
-Diperbarui: 2026-10-03
+Diperbarui: 2026-10-12 (peta sumber lokal & internasional + hasil uji akses: `peta-sumber-artikel-2026-10-12.md`)
 
 ## Patokan utama (hierarki sumber)
 1. **https://haji.go.id** — situs resmi Kementerian Haji dan Umrah RI (Kemenhaj). Sejak 2026 penyelenggaraan haji beralih dari Kemenag ke Kemenhaj. Patokan utama kebijakan, kuota, jadwal, biaya, dan pengumuman resmi.
