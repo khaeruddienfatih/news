@@ -12,6 +12,9 @@ Tujuan: menentukan sumber lokal (Indonesia), Arab Saudi, dan negara lain yang bi
 | Tingkat | Sumber | Cara | Catatan |
 |---|---|---|---|
 | **A — terbaca penuh** | haji.go.id (`/api/news`, `/api/hajj/waiting-list`) | curl | Isi berita lengkap + kategori + tanggal. Berita terbaru 11/10/2026. Bahan utama. |
+| **A — terbaca penuh** | himpuh.or.id (HIMPUH) | curl | Isi lengkap + tanggal ("Ditulis pada"). Sangat aktif (artikel #5026, terbit 12/10/2026 pagi). Daftar: `/blog`, `/blog/kategori/12/topik-hangat`; artikel: `/blog/detail/<id>/<slug>`. RSS `/feed/` tidak ada (404). |
+| **A — terbaca penuh** | amphuri.org (AMPHURI) | curl | Isi lengkap + meta `published_time`. Indeks `/berita` (kategori: Hajj & Umrah, DPP/DPD News, dll.), dokumen regulasi dalam/luar negeri di `/dokumen`. |
+| **A — terbaca penuh** | sapuhi.id (SAPUHI) | curl | Isi lengkap + tanggal. Indeks `/berita`, artikel `/artikel/<slug>`. Banyak bahasan regulasi (PMHU 2/2026, Nusuk haji 2027, visa multiple entry). |
 | **A — terbaca penuh** | kemenag.go.id | curl | Beranda terbaca; RSS `/rss` error 500. Haji sudah pindah ke Kemenhaj, jadi relevansinya terbatas (indeks kepuasan jemaah, keagamaan). |
 | **B — hanya cuplikan** | Semua media & situs lain | WebSearch | Dapat judul, URL, dan ringkasan, **bukan teks penuh**. Cukup untuk menemukan topik dan cek silang, tidak cukup untuk mengutip. |
 | **C — diblokir** | Semua alamat lain | curl 403 (proxy), WebFetch DNS gagal | Ditolak kebijakan jaringan environment. |
@@ -27,6 +30,21 @@ Supaya kelompok B/C bisa dibaca penuh, pemilik perlu menambah domain ke **Allowe
 | BPKH | bpkh.go.id | Dana haji, nilai manfaat |
 | Imigrasi | imigrasi.go.id | Paspor jemaah |
 | Kemenkes / Pusat Kesehatan Haji | kemkes.go.id | Istithaah kesehatan, vaksin meningitis |
+
+### Indonesia — asosiasi penyelenggara umrah & haji khusus
+Sumber sudut industri (PPIU/PIHK): tanggapan atas kebijakan, imbauan ke jemaah, isu travel. Statusnya **pernyataan pihak berkepentingan**, bukan sumber resmi pemerintah. Kutip sebagai pendapat asosiasi, sedangkan angka kebijakan dicek ke haji.go.id.
+
+| Asosiasi | Situs | Akses |
+|---|---|---|
+| HIMPUH — Himpunan Penyelenggara Umrah dan Haji | himpuh.or.id | ✅ penuh |
+| AMPHURI — Asosiasi Muslim Penyelenggara Haji dan Umrah RI | amphuri.org | ✅ penuh |
+| SAPUHI — Sarikat Penyelenggara Umroh dan Haji Indonesia | sapuhi.id | ✅ penuh |
+| ASPHURINDO — Asosiasi Penyelenggara Haji, Umrah dan Inbound Indonesia | belum ditemukan | lewat media/medsos |
+| KESTHURI — Kesatuan Tour Travel Haji Umrah RI | belum ditemukan | lewat media/medsos |
+| GAPHURA, ASPHIRASI, BERSATHU, Mutiara Haji, AMPUH, ATTMI, ASHURI | belum ditemukan | lewat media/medsos |
+| Komnas Haji dan Umrah (lembaga pemantau, bukan asosiasi travel) | belum ditemukan | dikutip lewat AMPHURI/media |
+
+Domain tebakan untuk asosiasi yang belum ditemukan (mis. asphurindo.or.id, kesthuri.or.id, gaphura.id) semuanya ditolak/tidak ada. Perlu alamat resmi dari pemilik atau akun media sosialnya.
 
 ### Indonesia — media pembanding
 Antara (antaranews.com, termasuk biro daerah), Republika/Ihram (republika.co.id), Detik Hikmah (detik.com/hikmah), Kompas, Kontan, Bisnis.com, Tirto, RRI (termasuk Voice of Indonesia berbahasa Inggris), Okezone Muslim, NU Online (nu.or.id), Muhammadiyah, MUI (fatwa — rujuk lembaga, bukan klaim sendiri).
@@ -65,7 +83,14 @@ Arab News, Saudi Gazette, Okaz, Al Riyadh, Sabq (Arab), Gulf News, Khaleej Times
 4. 9/10 — Integrasi data kependudukan (Dukcapil) untuk lindungi hak jemaah.
 5. 10–11/10 — Bali Expo: UMKM dan "Haji dan Umrah Store" (sudut ekonomi haji).
 
+## Calon topik dari situs asosiasi (terbaca penuh)
+1. HIMPUH 12/10 — KBRI Riyadh beri imbauan untuk jemaah umrah setelah serangan di Bandara King Khalid; nomor darurat 911/998; HIMPUH minta PPIU pantau penerbangan.
+2. HIMPUH 12/10 — 6 agenda pembenahan haji 2027 (SEB Kemendagri–Kemenhaj–Kemenkes, 9/10): validasi Siskohat, integrasi IKD, standardisasi istithaah, seleksi PHD.
+3. AMPHURI 8/10 — Komnas Haji: BPIH 2027 Rp98,4 juta "moderat".
+4. SAPUHI 15/9 — Haji 2027: pemesanan hotel dan katering wajib lewat Nusuk.
+5. HIMPUH — Biaya minimal umrah Rp27 juta, tiga catatan kritis HIMPUH.
+
 ## Alur kerja yang diusulkan
-1. Ambil topik dan fakta inti dari **haji.go.id API** (terbaca penuh).
+1. Ambil topik dan fakta inti dari **haji.go.id API** (terbaca penuh); sudut industri dari HIMPUH/AMPHURI/SAPUHI.
 2. Cari sudut Saudi/negara lain lewat **WebSearch**; catat URL sebagai rujukan.
 3. Fakta dari sumber kelompok B ditandai `belum diverifikasi langsung` (sesuai Pedoman Redaksi) sampai domainnya dibuka atau dicek manual.
