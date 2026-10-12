@@ -1,0 +1,130 @@
+DAFTAR SUMBER ARTIKEL UMROH & HAJI
+Diperbarui: 12 Oktober 2026
+
+Keterangan akses (dari lingkungan kerja Claude):
+  [PENUH]    = isi artikel lengkap bisa dibaca
+  [CUPLIKAN] = hanya judul + ringkasan lewat mesin pencari
+  [BLOKIR]   = belum bisa dibuka (perlu ditambah ke Allowed domains)
+
+======================================================================
+1. INDONESIA - PEMERINTAH (SUMBER RESMI / PATOKAN UTAMA)
+======================================================================
+[PENUH]    Kementerian Haji dan Umrah RI (Kemenhaj)
+           https://haji.go.id
+           API berita   : https://haji.go.id/api/news
+           API antrean  : https://haji.go.id/api/hajj/waiting-list
+           Tautan berita: https://haji.go.id/berita/<slug>
+[PENUH]    Kementerian Agama RI
+           https://kemenag.go.id
+[BLOKIR]   BPKH (Badan Pengelola Keuangan Haji)  https://bpkh.go.id
+[BLOKIR]   Direktorat Jenderal Imigrasi          https://www.imigrasi.go.id
+[BLOKIR]   Kementerian Kesehatan                 https://kemkes.go.id
+
+======================================================================
+2. INDONESIA - ASOSIASI PENYELENGGARA UMROH & HAJI KHUSUS
+   (pernyataan asosiasi = pendapat pihak berkepentingan, bukan fakta resmi)
+======================================================================
+[PENUH]    HIMPUH - Himpunan Penyelenggara Umrah dan Haji
+           https://himpuh.or.id
+           Daftar berita : https://himpuh.or.id/blog
+           Topik hangat  : https://himpuh.or.id/blog/kategori/12/topik-hangat
+           Pola artikel  : https://himpuh.or.id/blog/detail/<id>/<slug>
+[PENUH]    AMPHURI - Asosiasi Muslim Penyelenggara Haji dan Umrah RI
+           https://amphuri.org
+           Daftar berita : https://amphuri.org/berita
+           Regulasi      : https://amphuri.org/dokumen
+[PENUH]    SAPUHI - Sarikat Penyelenggara Umroh dan Haji Indonesia
+           https://sapuhi.id
+           Daftar berita : https://sapuhi.id/berita
+           Pola artikel  : https://sapuhi.id/artikel/<slug>
+[CUPLIKAN] ASPHURINDO - Asosiasi Penyelenggara Haji, Umrah dan Inbound Indonesia (situs belum ditemukan)
+[CUPLIKAN] KESTHURI - Kesatuan Tour Travel Haji Umrah RI (situs belum ditemukan)
+[CUPLIKAN] GAPHURA, ASPHIRASI, BERSATHU, Mutiara Haji, AMPUH, ATTMI, ASHURI (situs belum ditemukan)
+[CUPLIKAN] Komnas Haji dan Umrah (lembaga pemantau, dikutip lewat AMPHURI/media)
+
+======================================================================
+3. INDONESIA - MEDIA (PEMBANDING, BUKAN SUMBER TUNGGAL)
+======================================================================
+[CUPLIKAN] Antara                 https://www.antaranews.com
+[CUPLIKAN] Republika / Ihram      https://www.republika.co.id
+[CUPLIKAN] Detik Hikmah           https://www.detik.com/hikmah/haji-dan-umrah
+[CUPLIKAN] Kompas                 https://www.kompas.com
+[CUPLIKAN] Kontan                 https://nasional.kontan.co.id
+[CUPLIKAN] Bisnis.com             https://www.bisnis.com
+[CUPLIKAN] Tirto                  https://tirto.id
+[CUPLIKAN] RRI / Voice of Indonesia  https://rri.co.id
+[CUPLIKAN] Okezone Muslim         https://muslim.okezone.com
+[CUPLIKAN] NU Online              https://nu.or.id
+[CUPLIKAN] Muhammadiyah           https://muhammadiyah.or.id
+[CUPLIKAN] MUI (rujukan fatwa)    https://mui.or.id
+
+======================================================================
+4. ARAB SAUDI - PEMERINTAH (SUMBER RESMI)
+======================================================================
+[CUPLIKAN] Kementerian Haji dan Umrah Saudi   https://www.haj.gov.sa
+[CUPLIKAN] Nusuk (platform resmi umrah/haji)  https://www.nusuk.sa
+[CUPLIKAN] Saudi Press Agency (SPA)           https://www.spa.gov.sa
+[BLOKIR]   Kementerian Kesehatan Saudi        https://www.moh.gov.sa
+[BLOKIR]   Otoritas Dua Masjid Suci           https://alharamain.gov.sa
+[BLOKIR]   Kereta Cepat Haramain              https://www.hhr.sa
+[BLOKIR]   Royal Commission Makkah            https://www.rcmc.gov.sa
+
+======================================================================
+5. ARAB SAUDI & TELUK - MEDIA
+======================================================================
+[CUPLIKAN] Arab News        https://www.arabnews.com
+[CUPLIKAN] Saudi Gazette    https://saudigazette.com.sa
+[CUPLIKAN] Okaz (Arab)      https://www.okaz.com.sa
+[CUPLIKAN] Al Riyadh (Arab) https://www.alriyadh.com
+[CUPLIKAN] Sabq (Arab)      https://sabq.org
+[CUPLIKAN] Al Arabiya       https://english.alarabiya.net
+[CUPLIKAN] Gulf News (UEA)  https://gulfnews.com
+[CUPLIKAN] Khaleej Times    https://www.khaleejtimes.com
+[CUPLIKAN] The National     https://www.thenationalnews.com
+
+======================================================================
+6. NEGARA LAIN (PEMBANDING REGIONAL)
+======================================================================
+Malaysia   [CUPLIKAN] Tabung Haji              https://www.th.com.my
+           [CUPLIKAN] Bernama                  https://www.bernama.com
+           [CUPLIKAN] Berita Harian            https://www.bharian.com.my
+Pakistan   [CUPLIKAN] Ministry of Religious Affairs  https://mora.gov.pk
+           [CUPLIKAN] Dawn                     https://www.dawn.com
+India      [CUPLIKAN] Haj Committee of India   https://hajcommittee.gov.in
+Bangladesh [CUPLIKAN] Ittefaq                  https://en.ittefaq.com.bd
+Brunei     [CUPLIKAN] Pelita Brunei            https://www.pelitabrunei.gov.bn
+Nigeria    [CUPLIKAN] NAHCON                   https://nahcon.gov.ng
+Turki      [CUPLIKAN] Diyanet                  https://www.diyanet.gov.tr
+
+======================================================================
+7. AGREGATOR (UNTUK OTOMATISASI, PERLU DIBUKA AKSESNYA)
+======================================================================
+[BLOKIR]   Google News RSS (Indonesia):
+           https://news.google.com/rss/search?q=umrah&hl=id&gl=ID&ceid=ID:id
+[BLOKIR]   Google News RSS (Saudi, Inggris):
+           https://news.google.com/rss/search?q=umrah+saudi&hl=en-SA&gl=SA&ceid=SA:en
+
+======================================================================
+JANGAN DIPAKAI SEBAGAI SUMBER FAKTA
+======================================================================
+Blog agen travel / OTA (mis. Wego, visitworld.today, umrahservices.in).
+Angkanya sering berbeda antar-situs; telusuri ke haj.gov.sa / SPA / haji.go.id.
+
+======================================================================
+DOMAIN YANG DISARANKAN DITAMBAH KE "ALLOWED DOMAINS"
+======================================================================
+antaranews.com, republika.co.id, detik.com, kompas.com,
+haj.gov.sa, nusuk.sa, spa.gov.sa, arabnews.com, saudigazette.com.sa,
+th.com.my, bernama.com, news.google.com, bpkh.go.id
+Panduan: https://code.claude.com/docs/en/cloud-environments#network-access
+
+======================================================================
+CALON TOPIK (SUMBER TERBACA PENUH)
+======================================================================
+1. KBRI Riyadh: imbauan untuk jemaah umrah setelah serangan di Bandara King Khalid; darurat 911/998 (HIMPUH 12/10; haji.go.id 11/10)
+2. 6 agenda pembenahan haji 2027 (HIMPUH 12/10; haji.go.id 9/10)
+3. Izin KBIHU Al-Fatah Purwakarta dicabut (haji.go.id 9/10; HIMPUH)
+4. 345 calon jemaah batal berangkat karena kesehatan (haji.go.id 10/10)
+5. Komnas Haji: BPIH 2027 Rp98,4 juta "moderat" (AMPHURI 8/10)
+6. Haji 2027: hotel dan katering wajib lewat Nusuk (SAPUHI 15/9)
+7. Biaya minimal umrah Rp27 juta, tiga catatan kritis HIMPUH (HIMPUH)
